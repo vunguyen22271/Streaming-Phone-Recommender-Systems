@@ -7,10 +7,8 @@
 * [Technologies Used](#technologies-used)
 * [Setup](#setup)
 * [Screenshots](#screenshots)
-* [Usage](#usage)
 * [Project Status](#project-status)
 * [Room for Improvement](#room-for-improvement)
-* [Acknowledgements](#acknowledgements)
 * [Contact](#contact)
 <!-- * [License](#license) -->
 
@@ -23,6 +21,7 @@
 - Those 5 ids will be saved in mongo db. 5s since user click, nodejs automatically get 5 same phone id in mongo and display on web
 
 - System Architect:
+
 ![System Architect](./img/system-architect.png)
 
 ## Technologies Used
