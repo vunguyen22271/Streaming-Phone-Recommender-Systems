@@ -1,0 +1,96 @@
+.amount{
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.amount span{
+    width: 50px !important;
+    height: 32px;
+    border-left: 0;
+    border-right: 0;
+    font-size: 16px;
+    font-weight: 400;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+    cursor: text;
+    border-radius: 0;
+    -webkit-appearance: none;
+}
+.amount .btn{
+    outline: none;
+    cursor: pointer;
+    border: 0;
+    font-size: .875rem;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: 0;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    transition: background-color .1s cubic-bezier(.4,0,.6,1);
+    border: 1px solid rgba(0,0,0,.09);
+    border-radius: 2px;
+    background: transparent;
+    color: #ee4d2d;
+    width: 32px;
+    height: 32px;
+    margin: 5px;
+}
+.amount p{
+    font-size: 20px;
+    margin-right: 10px;
+    text-transform: capitalize;
+}
+.delete{
+    position: absolute;
+    cursor: pointer;
+    right: 500px;
+    display: contents;
+    color: #555;
+    text-decoration: underline;
+    font-size: 20px;
+    transition: all 0.5s;
+}
+.delete:hover{
+    color: #ee4d2d;
+    transform: translateY(-0.5vmax); 
+}
+.amount .delete{
+    margin-right: 10px;
+}
+.cart h3{
+    color: #ee4d2d;
+    font-weight: 100;
+}
+.total h3{
+    color: #ee4d2d;
+}
+/*h2{
+    /*color: #ee4d2d;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+h4{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+*/

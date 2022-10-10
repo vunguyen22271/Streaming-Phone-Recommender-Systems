@@ -1,0 +1,30 @@
+.user-page {
+    overflow-x: auto;
+}
+.user-page h2 h4{
+    text-align: center;
+    margin: 20px;
+    text-transform: capitalize;
+}
+.user-page table{
+    margin: auto;
+    width: 100%;
+}
+.user-page table,th,tr,td{
+    border:1px solid #ccc;
+    border-collapse: collapse;
+}
+th,td{
+    text-align: center;
+    text-transform: capitalize;
+    padding:10px;
+}
+th{
+    background-color: #4CAF50;
+}
+table a{
+    color: rgb(3,165,206)
+}
+tr:nth-child(even){background-color: #f2f2f2;}
+
+tr:hover {background-color: #ddd;}

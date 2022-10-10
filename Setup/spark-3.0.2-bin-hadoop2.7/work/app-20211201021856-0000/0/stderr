@@ -1,0 +1,76 @@
+Spark Executor Command: "C:\jre1.8.0_301\bin\java" "-cp" "D:\india\spark-3.0.2-bin-hadoop2.7\bin\..\conf\;D:\india\spark-3.0.2-bin-hadoop2.7\jars\*" "-Xmx1024M" "-Dspark.driver.port=56699" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@DESKTOP-E9AMD9G.mshome.net:56699" "--executor-id" "0" "--hostname" "172.17.224.1" "--cores" "8" "--app-id" "app-20211201021856-0000" "--worker-url" "spark://Worker@172.17.224.1:56653"
+========================================
+
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+21/12/01 02:18:57 INFO CoarseGrainedExecutorBackend: Started daemon with process name: 10928@DESKTOP-E9AMD9G
+21/12/01 02:18:58 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+21/12/01 02:18:58 INFO SecurityManager: Changing view acls to: Administrator
+21/12/01 02:18:58 INFO SecurityManager: Changing modify acls to: Administrator
+21/12/01 02:18:58 INFO SecurityManager: Changing view acls groups to: 
+21/12/01 02:18:58 INFO SecurityManager: Changing modify acls groups to: 
+21/12/01 02:18:58 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(Administrator); groups with view permissions: Set(); users  with modify permissions: Set(Administrator); groups with modify permissions: Set()
+21/12/01 02:18:59 INFO TransportClientFactory: Successfully created connection to DESKTOP-E9AMD9G.mshome.net/172.17.224.1:56699 after 635 ms (0 ms spent in bootstraps)
+21/12/01 02:18:59 INFO SecurityManager: Changing view acls to: Administrator
+21/12/01 02:18:59 INFO SecurityManager: Changing modify acls to: Administrator
+21/12/01 02:18:59 INFO SecurityManager: Changing view acls groups to: 
+21/12/01 02:18:59 INFO SecurityManager: Changing modify acls groups to: 
+21/12/01 02:18:59 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(Administrator); groups with view permissions: Set(); users  with modify permissions: Set(Administrator); groups with modify permissions: Set()
+21/12/01 02:19:00 INFO TransportClientFactory: Successfully created connection to DESKTOP-E9AMD9G.mshome.net/172.17.224.1:56699 after 1 ms (0 ms spent in bootstraps)
+21/12/01 02:19:00 INFO DiskBlockManager: Created local directory at C:\Users\Administrator\AppData\Local\Temp\spark-35924171-6404-4621-9ce3-6b2daa043ab0\executor-cbb1a54d-cfee-4804-bf13-38fa71392979\blockmgr-7285e1c5-f616-4bd5-8af5-3c781828e0da
+21/12/01 02:19:00 INFO MemoryStore: MemoryStore started with capacity 366.3 MiB
+21/12/01 02:19:00 INFO CoarseGrainedExecutorBackend: Connecting to driver: spark://CoarseGrainedScheduler@DESKTOP-E9AMD9G.mshome.net:56699
+21/12/01 02:19:00 INFO WorkerWatcher: Connecting to worker spark://Worker@172.17.224.1:56653
+21/12/01 02:19:00 INFO TransportClientFactory: Successfully created connection to /172.17.224.1:56653 after 3 ms (0 ms spent in bootstraps)
+21/12/01 02:19:00 INFO WorkerWatcher: Successfully connected to spark://Worker@172.17.224.1:56653
+21/12/01 02:19:00 INFO ResourceUtils: ==============================================================
+21/12/01 02:19:00 INFO ResourceUtils: Resources for spark.executor:
+
+21/12/01 02:19:00 INFO ResourceUtils: ==============================================================
+21/12/01 02:19:00 INFO CoarseGrainedExecutorBackend: Successfully registered with driver
+21/12/01 02:19:00 INFO Executor: Starting executor ID 0 on host 172.17.224.1
+21/12/01 02:19:00 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 56813.
+21/12/01 02:19:00 INFO NettyBlockTransferService: Server created on 172.17.224.1:56813
+21/12/01 02:19:00 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+21/12/01 02:19:00 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(0, 172.17.224.1, 56813, None)
+21/12/01 02:19:00 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(0, 172.17.224.1, 56813, None)
+21/12/01 02:19:00 INFO BlockManager: Initialized BlockManager: BlockManagerId(0, 172.17.224.1, 56813, None)
+21/12/01 02:19:00 INFO Executor: Using REPL class URI: spark://DESKTOP-E9AMD9G.mshome.net:56699/classes
+21/12/01 02:19:00 INFO Executor: Fetching spark://DESKTOP-E9AMD9G.mshome.net:56699/jars/com.github.luben_zstd-jni-1.4.4-3.jar with timestamp 1638299934862
+21/12/01 02:19:00 INFO TransportClientFactory: Successfully created connection to DESKTOP-E9AMD9G.mshome.net/172.17.224.1:56699 after 2 ms (0 ms spent in bootstraps)
+21/12/01 02:19:00 INFO Utils: Fetching spark://DESKTOP-E9AMD9G.mshome.net:56699/jars/com.github.luben_zstd-jni-1.4.4-3.jar to C:\Users\Administrator\AppData\Local\Temp\spark-35924171-6404-4621-9ce3-6b2daa043ab0\executor-cbb1a54d-cfee-4804-bf13-38fa71392979\spark-8940a29e-0478-4d03-9cf3-3cfe7afbab68\fetchFileTemp8113673872840484599.tmp
+21/12/01 02:19:01 INFO Utils: Copying C:\Users\Administrator\AppData\Local\Temp\spark-35924171-6404-4621-9ce3-6b2daa043ab0\executor-cbb1a54d-cfee-4804-bf13-38fa71392979\spark-8940a29e-0478-4d03-9cf3-3cfe7afbab68\-646617301638299934862_cache to D:\india\spark-3.0.2-bin-hadoop2.7\work\app-20211201021856-0000\0\.\com.github.luben_zstd-jni-1.4.4-3.jar
+21/12/01 02:19:01 INFO Executor: Adding file:/D:/india/spark-3.0.2-bin-hadoop2.7/work/app-20211201021856-0000/0/./com.github.luben_zstd-jni-1.4.4-3.jar to class loader
+21/12/01 02:19:01 INFO Executor: Fetching spark://DESKTOP-E9AMD9G.mshome.net:56699/jars/org.apache.kafka_kafka-clients-2.4.1.jar with timestamp 1638299934862
+21/12/01 02:19:01 INFO Utils: Fetching spark://DESKTOP-E9AMD9G.mshome.net:56699/jars/org.apache.kafka_kafka-clients-2.4.1.jar to C:\Users\Administrator\AppData\Local\Temp\spark-35924171-6404-4621-9ce3-6b2daa043ab0\executor-cbb1a54d-cfee-4804-bf13-38fa71392979\spark-8940a29e-0478-4d03-9cf3-3cfe7afbab68\fetchFileTemp6088140252513833513.tmp
+21/12/01 02:19:01 INFO Utils: Copying C:\Users\Administrator\AppData\Local\Temp\spark-35924171-6404-4621-9ce3-6b2daa043ab0\executor-cbb1a54d-cfee-4804-bf13-38fa71392979\spark-8940a29e-0478-4d03-9cf3-3cfe7afbab68\-3740436981638299934862_cache to D:\india\spark-3.0.2-bin-hadoop2.7\work\app-20211201021856-0000\0\.\org.apache.kafka_kafka-clients-2.4.1.jar
+21/12/01 02:19:01 INFO Executor: Adding file:/D:/india/spark-3.0.2-bin-hadoop2.7/work/app-20211201021856-0000/0/./org.apache.kafka_kafka-clients-2.4.1.jar to class loader
+21/12/01 02:19:01 INFO Executor: Fetching spark://DESKTOP-E9AMD9G.mshome.net:56699/jars/org.apache.spark_spark-sql-kafka-0-10_2.12-3.0.1.jar with timestamp 1638299934862
+21/12/01 02:19:01 INFO Utils: Fetching spark://DESKTOP-E9AMD9G.mshome.net:56699/jars/org.apache.spark_spark-sql-kafka-0-10_2.12-3.0.1.jar to C:\Users\Administrator\AppData\Local\Temp\spark-35924171-6404-4621-9ce3-6b2daa043ab0\executor-cbb1a54d-cfee-4804-bf13-38fa71392979\spark-8940a29e-0478-4d03-9cf3-3cfe7afbab68\fetchFileTemp3654409917320716819.tmp
+21/12/01 02:19:01 INFO Utils: Copying C:\Users\Administrator\AppData\Local\Temp\spark-35924171-6404-4621-9ce3-6b2daa043ab0\executor-cbb1a54d-cfee-4804-bf13-38fa71392979\spark-8940a29e-0478-4d03-9cf3-3cfe7afbab68\20847722031638299934862_cache to D:\india\spark-3.0.2-bin-hadoop2.7\work\app-20211201021856-0000\0\.\org.apache.spark_spark-sql-kafka-0-10_2.12-3.0.1.jar
+21/12/01 02:19:01 INFO Executor: Adding file:/D:/india/spark-3.0.2-bin-hadoop2.7/work/app-20211201021856-0000/0/./org.apache.spark_spark-sql-kafka-0-10_2.12-3.0.1.jar to class loader
+21/12/01 02:19:01 INFO Executor: Fetching spark://DESKTOP-E9AMD9G.mshome.net:56699/jars/org.xerial.snappy_snappy-java-1.1.7.5.jar with timestamp 1638299934862
+21/12/01 02:19:01 INFO Utils: Fetching spark://DESKTOP-E9AMD9G.mshome.net:56699/jars/org.xerial.snappy_snappy-java-1.1.7.5.jar to C:\Users\Administrator\AppData\Local\Temp\spark-35924171-6404-4621-9ce3-6b2daa043ab0\executor-cbb1a54d-cfee-4804-bf13-38fa71392979\spark-8940a29e-0478-4d03-9cf3-3cfe7afbab68\fetchFileTemp8590053822719971496.tmp
+21/12/01 02:19:01 INFO Utils: Copying C:\Users\Administrator\AppData\Local\Temp\spark-35924171-6404-4621-9ce3-6b2daa043ab0\executor-cbb1a54d-cfee-4804-bf13-38fa71392979\spark-8940a29e-0478-4d03-9cf3-3cfe7afbab68\-16143044081638299934862_cache to D:\india\spark-3.0.2-bin-hadoop2.7\work\app-20211201021856-0000\0\.\org.xerial.snappy_snappy-java-1.1.7.5.jar
+21/12/01 02:19:01 INFO Executor: Adding file:/D:/india/spark-3.0.2-bin-hadoop2.7/work/app-20211201021856-0000/0/./org.xerial.snappy_snappy-java-1.1.7.5.jar to class loader
+21/12/01 02:19:01 INFO Executor: Fetching spark://DESKTOP-E9AMD9G.mshome.net:56699/jars/org.apache.spark_spark-token-provider-kafka-0-10_2.12-3.0.1.jar with timestamp 1638299934862
+21/12/01 02:19:01 INFO Utils: Fetching spark://DESKTOP-E9AMD9G.mshome.net:56699/jars/org.apache.spark_spark-token-provider-kafka-0-10_2.12-3.0.1.jar to C:\Users\Administrator\AppData\Local\Temp\spark-35924171-6404-4621-9ce3-6b2daa043ab0\executor-cbb1a54d-cfee-4804-bf13-38fa71392979\spark-8940a29e-0478-4d03-9cf3-3cfe7afbab68\fetchFileTemp1948053318578319994.tmp
+21/12/01 02:19:01 INFO Utils: Copying C:\Users\Administrator\AppData\Local\Temp\spark-35924171-6404-4621-9ce3-6b2daa043ab0\executor-cbb1a54d-cfee-4804-bf13-38fa71392979\spark-8940a29e-0478-4d03-9cf3-3cfe7afbab68\-6546648801638299934862_cache to D:\india\spark-3.0.2-bin-hadoop2.7\work\app-20211201021856-0000\0\.\org.apache.spark_spark-token-provider-kafka-0-10_2.12-3.0.1.jar
+21/12/01 02:19:01 INFO Executor: Adding file:/D:/india/spark-3.0.2-bin-hadoop2.7/work/app-20211201021856-0000/0/./org.apache.spark_spark-token-provider-kafka-0-10_2.12-3.0.1.jar to class loader
+21/12/01 02:19:01 INFO Executor: Fetching spark://DESKTOP-E9AMD9G.mshome.net:56699/jars/org.spark-project.spark_unused-1.0.0.jar with timestamp 1638299934862
+21/12/01 02:19:01 INFO Utils: Fetching spark://DESKTOP-E9AMD9G.mshome.net:56699/jars/org.spark-project.spark_unused-1.0.0.jar to C:\Users\Administrator\AppData\Local\Temp\spark-35924171-6404-4621-9ce3-6b2daa043ab0\executor-cbb1a54d-cfee-4804-bf13-38fa71392979\spark-8940a29e-0478-4d03-9cf3-3cfe7afbab68\fetchFileTemp6983841294579870377.tmp
+21/12/01 02:19:01 INFO Utils: Copying C:\Users\Administrator\AppData\Local\Temp\spark-35924171-6404-4621-9ce3-6b2daa043ab0\executor-cbb1a54d-cfee-4804-bf13-38fa71392979\spark-8940a29e-0478-4d03-9cf3-3cfe7afbab68\-16344287391638299934862_cache to D:\india\spark-3.0.2-bin-hadoop2.7\work\app-20211201021856-0000\0\.\org.spark-project.spark_unused-1.0.0.jar
+21/12/01 02:19:01 INFO Executor: Adding file:/D:/india/spark-3.0.2-bin-hadoop2.7/work/app-20211201021856-0000/0/./org.spark-project.spark_unused-1.0.0.jar to class loader
+21/12/01 02:19:01 INFO Executor: Fetching spark://DESKTOP-E9AMD9G.mshome.net:56699/jars/org.slf4j_slf4j-api-1.7.30.jar with timestamp 1638299934862
+21/12/01 02:19:01 INFO Utils: Fetching spark://DESKTOP-E9AMD9G.mshome.net:56699/jars/org.slf4j_slf4j-api-1.7.30.jar to C:\Users\Administrator\AppData\Local\Temp\spark-35924171-6404-4621-9ce3-6b2daa043ab0\executor-cbb1a54d-cfee-4804-bf13-38fa71392979\spark-8940a29e-0478-4d03-9cf3-3cfe7afbab68\fetchFileTemp6500734820537258024.tmp
+21/12/01 02:19:01 INFO Utils: Copying C:\Users\Administrator\AppData\Local\Temp\spark-35924171-6404-4621-9ce3-6b2daa043ab0\executor-cbb1a54d-cfee-4804-bf13-38fa71392979\spark-8940a29e-0478-4d03-9cf3-3cfe7afbab68\-4245499821638299934862_cache to D:\india\spark-3.0.2-bin-hadoop2.7\work\app-20211201021856-0000\0\.\org.slf4j_slf4j-api-1.7.30.jar
+21/12/01 02:19:01 INFO Executor: Adding file:/D:/india/spark-3.0.2-bin-hadoop2.7/work/app-20211201021856-0000/0/./org.slf4j_slf4j-api-1.7.30.jar to class loader
+21/12/01 02:19:01 INFO Executor: Fetching spark://DESKTOP-E9AMD9G.mshome.net:56699/jars/org.lz4_lz4-java-1.7.1.jar with timestamp 1638299934862
+21/12/01 02:19:01 INFO Utils: Fetching spark://DESKTOP-E9AMD9G.mshome.net:56699/jars/org.lz4_lz4-java-1.7.1.jar to C:\Users\Administrator\AppData\Local\Temp\spark-35924171-6404-4621-9ce3-6b2daa043ab0\executor-cbb1a54d-cfee-4804-bf13-38fa71392979\spark-8940a29e-0478-4d03-9cf3-3cfe7afbab68\fetchFileTemp2633607642642779452.tmp
+21/12/01 02:19:01 INFO Utils: Copying C:\Users\Administrator\AppData\Local\Temp\spark-35924171-6404-4621-9ce3-6b2daa043ab0\executor-cbb1a54d-cfee-4804-bf13-38fa71392979\spark-8940a29e-0478-4d03-9cf3-3cfe7afbab68\-9715866141638299934862_cache to D:\india\spark-3.0.2-bin-hadoop2.7\work\app-20211201021856-0000\0\.\org.lz4_lz4-java-1.7.1.jar
+21/12/01 02:19:02 INFO Executor: Adding file:/D:/india/spark-3.0.2-bin-hadoop2.7/work/app-20211201021856-0000/0/./org.lz4_lz4-java-1.7.1.jar to class loader
+21/12/01 02:19:02 INFO Executor: Fetching spark://DESKTOP-E9AMD9G.mshome.net:56699/jars/org.apache.commons_commons-pool2-2.6.2.jar with timestamp 1638299934862
+21/12/01 02:19:02 INFO Utils: Fetching spark://DESKTOP-E9AMD9G.mshome.net:56699/jars/org.apache.commons_commons-pool2-2.6.2.jar to C:\Users\Administrator\AppData\Local\Temp\spark-35924171-6404-4621-9ce3-6b2daa043ab0\executor-cbb1a54d-cfee-4804-bf13-38fa71392979\spark-8940a29e-0478-4d03-9cf3-3cfe7afbab68\fetchFileTemp1707719645657614654.tmp
+21/12/01 02:19:02 INFO Utils: Copying C:\Users\Administrator\AppData\Local\Temp\spark-35924171-6404-4621-9ce3-6b2daa043ab0\executor-cbb1a54d-cfee-4804-bf13-38fa71392979\spark-8940a29e-0478-4d03-9cf3-3cfe7afbab68\8044525791638299934862_cache to D:\india\spark-3.0.2-bin-hadoop2.7\work\app-20211201021856-0000\0\.\org.apache.commons_commons-pool2-2.6.2.jar
+21/12/01 02:19:02 INFO Executor: Adding file:/D:/india/spark-3.0.2-bin-hadoop2.7/work/app-20211201021856-0000/0/./org.apache.commons_commons-pool2-2.6.2.jar to class loader
+21/12/01 02:19:20 WARN ProcfsMetricsGetter: Exception when trying to compute pagesize, as a result reporting of ProcessTree metrics is stopped
+21/12/01 02:21:38 INFO CoarseGrainedExecutorBackend: Driver commanded a shutdown
